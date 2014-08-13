@@ -1,0 +1,98 @@
+// Override EDGE variables here
+// To override, uncomment the variable and set the new value
+
+// -------
+// FONT
+// -------
+$header-font-family : "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, "sans-serif";
+$body-font-family   : "Roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+// $code-font-family   : "Consolas", Courier, "monospace";
+
+// --------------------------------
+//   COLORS
+// --------------------------------
+
+$main-color : #bd653d;
+$sub-color  : #9fc6b3; 
+$yellow		: #e5b841;
+
+// ----------------
+// OUTPUT CONFIG
+// ----------------
+$responsive : true;
+
+// $include-tile       : true;
+$include-visibility : true;
+$include-button     : true;
+
+$include-animate : true;
+// $include-print   : false;
+// $include-code    : false;
+
+// ---------------
+// GLOBAL VALUE
+// ---------------
+// $g-radius : 3px;
+$g-transition : all .3s ease-in-out;
+
+// --------
+// GRID
+// --------
+$row-max-width : 1140px;
+$total-columns : 6;
+// $column-gutter : 20px;
+
+// ------------
+// TILE
+// ------------
+// $max-tiles   : 12;
+// $tile-gutter : 15px;
+
+// ------
+// BODY
+// ------
+// $body-background  : #fff;
+$body-font-color  : #333;
+// $body-font-weight : 400;
+
+// $body-font-size   : 16px;
+// $body-line-height : 1.5;
+
+// ---------------
+// TYPOGRAPHY
+// ---------------
+// $h1-font-size : 44px;
+// $h2-font-size : 36px;
+// $h3-font-size : 28px;
+// $h4-font-size : 22px;
+// $h5-font-size : 18px;
+// $h6-font-size : 16px;
+
+// $header-font-color  : $body-font-color;
+// $header-font-weight : 700;
+
+// $p-margin-bottom  : 1em;
+
+// -------------------
+// MEDIA QUERIES
+// -------------------
+$mini-screen   : 480px;
+$small-screen  : 767px;
+$md-screen	   : 1000px;
+$large-screen  : 1440px;
+// $retina-screen : 192dpi;
+
+// -----------------
+// CODE Highlighter
+// -----------------
+// $code-theme  : light;  // "light" or "dark"
+
+// ----------
+// BUTTON
+// ----------
+// $button-color : $main-color;
+
+// ------------------
+// TEXT DIRECTION
+// ------------------
+// $text-direction   : ltr;  // Controls default global text direction, 'rtl' or 'ltr'

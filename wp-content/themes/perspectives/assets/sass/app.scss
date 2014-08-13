@@ -1,0 +1,185 @@
+@import "setting";
+@import "edge/helpers";
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* HEADER */
+
+header.banner {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 999999;
+	width:100%;
+	background:#222;
+	padding:0 10px;
+
+	nav {
+		float:left;
+	}
+
+	nav ul {
+		list-style: none;
+
+		li {
+			float:left;
+			padding:10px 0;
+
+			a {
+				padding:10px;
+				font-weight: 700;
+				color:rgba(white,.5);
+				text-transform: uppercase;
+				font-size: 13px;
+				@include transition($g-transition);
+			}
+
+			a:hover {
+				color:white;
+			}
+		}
+	}
+}
+
+/* MISC */
+
+.film-teal {
+	background-color: $sub-color;
+}
+
+.film-yellow {
+	background-color: $yellow;
+}
+
+.film-red {
+	background-color: $main-color;
+}
+
+.film-black {
+	background-color: #222;
+}
+
+/* LANDING */
+.home header.banner {
+	bottom:0;
+	top: auto;
+}
+
+.landing {
+	width:100%;
+	height:100%;
+
+	article.film {
+		width: calc(100% / 3);
+		height: calc((100% - 43px) / 3);
+		float:left;
+		position:relative;
+    display:inline-block;
+    cursor: pointer;
+    overflow:hidden;
+
+    &.film-black {
+    	cursor: auto;
+    	pointer-events:none;
+    }
+
+    h1.slogan {
+    	font-size: 28px;
+    	font-weight: 900;
+    	text-transform: uppercase;
+    	text-align: center;
+    	letter-spacing: 0.05em;
+    	color:white;
+    	line-height: 1.3;
+    	position: absolute;
+    	width: 100%;
+    	top: 50%;
+    	left:50%;
+    	@include transform(translate(-50%, -50%));
+    }
+
+    .logo {
+    	position: absolute;
+    	top: 50%;
+    	left:30px;
+    	@include transform(translate(0, -50%));
+    }
+
+		.avatar {
+			position:absolute;
+	    max-height:75%;
+	    max-width:75%;
+	    display:block;
+	    left:50%;
+	    bottom:-5px;
+	    @include transform(translate(-50%, 0));
+			@include transition($g-transition);	    
+		}
+
+		&:hover .avatar {
+			bottom:0;
+		}
+
+		.avatar.pop {
+			@include transform(scale(1.3)translate(-10%, 0));
+		}
+	}
+
+	@media screen and (max-width: $md-screen) {
+
+		article.film {
+			width: calc(100% / 2);
+			height: calc(100% / 2);
+		}	
+	}
+
+	.modal {
+		visibility: hidden;
+		background:#222;
+		color:white;
+		z-index: 9999;
+		width:calc((100% / 3) * 2);
+		height: calc((100% - 43px) / 3);
+		position:absolute;
+		right:0;
+		top: calc((100% - 43px) / 3);
+
+		.still {
+			width: 50%;
+			height: 100%;
+			float: left;
+			background-size:cover;
+			background-repeat: no-repeat;
+		}
+
+		.meta {
+			width: 50%;
+			height: 100%;
+			float: left;
+			position: relative;
+			padding:40px 20px;
+			text-align: center;
+
+			h2 {
+				font-size: 28px;
+	    	font-weight: 900;
+	    	text-transform: uppercase;
+	    	text-align: center;
+	    	letter-spacing: 0.05em;
+	    	color:white;
+	    	line-height: 1.3;
+			}
+
+			.details {
+				font-size: 14px;
+				color: #999;
+				text-align: center;
+				text-transform: uppercase;
+				margin:10px 0 30px;
+			}
+		}
+	}
+}

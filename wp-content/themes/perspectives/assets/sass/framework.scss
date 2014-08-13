@@ -1,0 +1,11 @@
+@import "setting";
+@import "edge";
+
+// Put your generic style that can be re-used in other project here
+
+button, .button, input[type="submit"], input[type="reset"] {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 5px 15px;
+	font-size:14px;
+}
