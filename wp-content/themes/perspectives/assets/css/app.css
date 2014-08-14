@@ -128,7 +128,7 @@ header.banner {
       height: 100%;
       float: left;
       position: relative;
-      padding: 40px 20px;
+      padding: 40px 30px;
       text-align: center; }
       .landing .modal .meta h2 {
         font-size: 28px;
@@ -144,3 +144,12 @@ header.banner {
         text-align: center;
         text-transform: uppercase;
         margin: 10px 0 30px; }
+      .landing .modal .meta .modal-close {
+        position: absolute;
+        top: -36px;
+        right: 0;
+        padding: 6px 12px;
+        line-height: 1;
+        font-size: 24px;
+        color: white;
+        background: #333; }

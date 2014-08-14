@@ -13,6 +13,7 @@
 	<div class="modal" data-modal-id="<?php the_ID(); ?>">
 		<div class="still" style="background-image:url(<?php the_field('still') ?>);"></div>
 		<div class="meta">
+			<a class="modal-close">&times;</a>
 			<h2><?php the_field('title') ?></h2>
 			<p class="details">
 				<?php $date = get_field('date'); echo date('n F'); ?>, <?php the_field('time') ?><br>

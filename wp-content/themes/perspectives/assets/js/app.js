@@ -7,4 +7,9 @@ $(document).ready(function() {
   	$('.modal').removeClass('animated fadeIn');
   	$('.landing').find("[data-modal-id='" + filmID + "']").addClass('animated fadein');
 	});
+	
+	$('.modal-close').click(function(){
+		$('.avatar').removeClass('pop');
+		$('.modal').fadeOut().removeClass('animated fadeIn').fadeIn();
+	});
 });
