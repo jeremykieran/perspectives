@@ -4,8 +4,8 @@
 // -------
 // FONT
 // -------
-$header-font-family : "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, "sans-serif";
-$body-font-family   : "Roboto", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+$header-font-family : "Roboto", "Courier", "Courier New", "sans-serif";
+$body-font-family   : "Roboto", "Courier", "Courier New", "sans-serif";
 // $code-font-family   : "Consolas", Courier, "monospace";
 
 // --------------------------------
@@ -34,44 +34,43 @@ $include-animate : true;
 // ---------------
 // $g-radius : 3px;
 $g-transition : all .3s ease-in-out;
-
 // --------
 // GRID
 // --------
-$row-max-width : 1140px;
+$row-max-width : 1220px;
 $total-columns : 6;
-// $column-gutter : 20px;
+$column-gutter : 60px;
 
 // ------------
 // TILE
 // ------------
-// $max-tiles   : 12;
+$max-tiles   : 4;
 // $tile-gutter : 15px;
 
 // ------
 // BODY
 // ------
-// $body-background  : #fff;
-$body-font-color  : #333;
+$body-background  : #f7f7f7;
+$body-font-color  : #444;
 // $body-font-weight : 400;
 
-// $body-font-size   : 16px;
+$body-font-size   : 14px;
 // $body-line-height : 1.5;
 
 // ---------------
 // TYPOGRAPHY
 // ---------------
-// $h1-font-size : 44px;
-// $h2-font-size : 36px;
-// $h3-font-size : 28px;
-// $h4-font-size : 22px;
-// $h5-font-size : 18px;
-// $h6-font-size : 16px;
+$h1-font-size : 32px;
+$h2-font-size : 28px;
+$h3-font-size : 24px;
+$h4-font-size : 18px;
+$h5-font-size : 16px;
+$h6-font-size : 15px;
 
-// $header-font-color  : $body-font-color;
-// $header-font-weight : 700;
+$header-font-color  : #222;
+// $header-font-weight : 300;
 
-// $p-margin-bottom  : 1em;
+$p-margin-bottom  : 13px;
 
 // -------------------
 // MEDIA QUERIES

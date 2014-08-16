@@ -25,5 +25,24 @@
 <body <?php body_class( $class ); ?>>
   
 <header class="banner">
-  <nav><?php edge_nav_menu(); ?></nav>
+	<div class="row">
+		<div class="brand"><a href="<?php echo home_url(); ?>"><h1>Perspectives Film Festival</h1></a></div>
+		<nav>
+      <span class="social">
+        <a href="http://www.facebook.com/PerspectivesFF" alt="Facebook"><i class="icon-facebook-squared"></i></a>
+        <a href="http://www.instagram.com/Perspectivesfilmfest" alt="Instagram - Perspectivesfilmfest"><i class="icon-instagram"></i></a>
+      </span>
+      <?php edge_nav_menu(); ?>
+    </nav>
+    
+		<div id="hamburger" class="hamburglar is-closed menu-toggle">
+	    <div class="burger-icon">
+	      <div class="burger-container">
+	        <span class="burger-bun-top"></span>
+	        <span class="burger-filling"></span>
+	        <span class="burger-bun-bot"></span>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </header>

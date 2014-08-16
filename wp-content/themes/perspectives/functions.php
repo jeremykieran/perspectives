@@ -12,7 +12,7 @@ add_theme_support("menus");
    3: (opt) Taxonomy name, MUST be singular
 */
 // Example:
-add_post_type("Film", "video-alt");
+add_post_type("Film", "video-alt", "Type");
 class Film extends Post {};
 
 /* Remove Unnecessary ADMIN SIDEBAR
