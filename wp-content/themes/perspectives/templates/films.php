@@ -16,18 +16,7 @@
 			<a class="modal-close">&times;</a>
 			<h2><?php the_field('title') ?></h2>
 			<p class="details">
-				<?php $date = get_field('date');
-										
-					// extract Y,M,D
-					$y = substr($date, 0, 4);
-					$m = substr($date, 4, 2);
-					$d = substr($date, 6, 2);
-					
-					// create UNIX
-					$time = strtotime("{$d}-{$m}-{$y}");
-					
-					// format date (November 11th 1988)
-					echo date('d F', $time); ?>
+				<?php the_field('date') ?>
 				, <?php the_field('time') ?><br>
 				<?php // $venue = get_field('venue'); echo $venue['address']; ?>
 			</p>

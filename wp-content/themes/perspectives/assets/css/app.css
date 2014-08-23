@@ -45,6 +45,7 @@
 /* '' */
 body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
   @media screen and (max-width: 767px) {
     body {
@@ -111,6 +112,26 @@ header.banner {
         text-transform: uppercase;
         font-weight: 900;
         font-size: 13px; }
+      header.banner nav ul li.menu-item-has-children:hover > .sub-menu {
+        height: auto; }
+      header.banner nav ul li .sub-menu {
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        background: #222;
+        margin-top: 10px;
+        -webkit-transition: 0.3s ease-in-out height;
+        -moz-transition: 0.3s ease-in-out height;
+        transition: 0.3s ease-in-out height; }
+        header.banner nav ul li .sub-menu:hover {
+          height: auto; }
+        header.banner nav ul li .sub-menu li {
+          float: none;
+          padding: 10px 5px; }
+          header.banner nav ul li .sub-menu li:hover, header.banner nav ul li .sub-menu li.current-menu-item {
+            -webkit-box-shadow: inset 0 0 20px -3px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: inset 0 0 20px -3px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 0 20px -3px rgba(0, 0, 0, 0.4); }
 
 .menu-toggle {
   display: none; }
@@ -145,6 +166,16 @@ header.banner {
       header.banner nav .social a {
         font-size: 24px;
         padding: 4px; }
+    header.banner nav ul li > .sub-menu {
+      height: auto;
+      position: relative;
+      margin-bottom: -10px; }
+      header.banner nav ul li > .sub-menu li {
+        background: #444; }
+      header.banner nav ul li > .sub-menu li > a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
     header.banner nav ul li {
       float: none;
       width: 100%;
@@ -277,6 +308,8 @@ header.banner {
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         width: 100%;
         padding: 30px; }
       .landing .modal .meta h2 {
