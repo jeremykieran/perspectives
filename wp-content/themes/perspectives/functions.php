@@ -4,8 +4,6 @@
 add_theme_support("post-thumbnails"); 
 add_theme_support("menus");
 
-
-
 /* CUSTOM POST TYPE
    1: Type name, MUST be singular
    2: (opt) Icon name, check http://melchoyce.github.io/dashicons/
@@ -14,6 +12,9 @@ add_theme_support("menus");
 // Example:
 add_post_type("Film", "video-alt", "Type");
 class Film extends Post {};
+
+add_post_type("Workshop", "editor-paste-word");
+class Workshop extends Post {};
 
 /* Remove Unnecessary ADMIN SIDEBAR
    - Use the slug

@@ -369,6 +369,11 @@ header.banner {
         line-height: 1.3; } }
 
 /* PAGE HEAEDER */
+header.page-header.orange {
+  background: #bd653d; }
+  header.page-header.orange h1 {
+    color: white; }
+
 header.page-header {
   margin-top: 40px;
   padding-top: 50px;
@@ -522,6 +527,88 @@ header.page-header {
     margin: 10px 5px 20px;
     text-transform: uppercase;
     font-weight: 600; }
+
+/* SCHEDULE */
+.schedule {
+  margin-top: 50px; }
+  .schedule .day {
+    padding: 5px;
+    text-align: center; }
+    .schedule .day .day-container {
+      background: white;
+      padding: 20px 20px 10px; }
+    .schedule .day h3 {
+      line-height: 1.3;
+      font-size: 32px; }
+    .schedule .day h4 {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #888;
+      margin: 5px 0 20px;
+      letter-spacing: 1px;
+      font-weight: 400; }
+    .schedule .day h5 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.4px; }
+    .schedule .day .event {
+      text-align: center;
+      background: #f8f8f8;
+      margin-bottom: 20px;
+      padding-bottom: 1px; }
+      .schedule .day .event:hover [class*="film-"] > img, .schedule .day .event:hover [class^="film-"] > img {
+        bottom: 0; }
+      .schedule .day .event [class*="film-"], .schedule .day .event [class^="film-"] {
+        height: 230px;
+        overflow: hidden;
+        text-align: center;
+        position: relative; }
+        .schedule .day .event [class*="film-"] img, .schedule .day .event [class^="film-"] img {
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          max-width: 100%;
+          max-height: 80%;
+          -webkit-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      .schedule .day .event p.title {
+        margin: 10px 0 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        color: #444; }
+      .schedule .day .event p {
+        color: #888; }
+
+.ticketing, .venue {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .ticketing h3.red, .ticketing h3.yellow, .ticketing h3.teal, .venue h3.red, .venue h3.yellow, .venue h3.teal {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 24px; }
+  .ticketing h3.yellow, .venue h3.yellow {
+    background: #e5b841; }
+  .ticketing h3.teal, .venue h3.teal {
+    background: #9fc6b3; }
+  .ticketing h3.red, .venue h3.red {
+    background: #bd653d; }
+
+/* VENUE */
+.venue iframe {
+  margin-bottom: 20px; }
+.venue h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px; }
 
 /* FOOTER */
 .basement {
