@@ -1,6 +1,6 @@
 /* ------------------------------------------
 - EDGE Framework - github.com/HennerS/Edge
-- v1.2.9 (Ezalor)
+- v1.2.3 (Ezalor)
 ------------------------------------------ */
 /* ----------------
   EDGE Normalize
@@ -324,7 +324,7 @@ blockquote {
 .row {
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1160px;
   zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -336,7 +336,7 @@ blockquote {
     padding-right: 30px;
     padding-left: 30px;
     width: 100%;
-    max-width: 1220px; }
+    max-width: 1100px; }
     .row.collapse .row {
       margin: 0;
       padding-right: 0;
@@ -1041,16 +1041,3 @@ input[type="date"]::-webkit-input-placeholder {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     transform: translateX(0); } }
-
-button, .button, input[type="submit"], input[type="reset"] {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: center;
-  padding: 5px 15px;
-  font-size: 14px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0; }
-
-h1, h2, h3 {
-  text-transform: uppercase; }

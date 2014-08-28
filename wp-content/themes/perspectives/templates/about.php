@@ -11,6 +11,10 @@
 		<div class="large-4 column">
 			<?php the_field('about') ?>
 		</div>
+
+		<aside class="large-2 column">
+			<?php the_field('sidebar') ?>
+		</aside>
 	</section>
 
 	<section class="about-section festival-team hide">

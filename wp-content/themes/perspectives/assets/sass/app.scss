@@ -18,8 +18,25 @@ body {
 	}
 }
 
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
 a {
 	@include transition($g-transition);
+}
+
+button, .button, input[type="submit"], input[type="reset"] {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 14px;
+  @include border-radius(0);
+
+  &:hover {
+  	background-color:#888;
+  }
 }
 
 /* HEADER */
@@ -217,17 +234,12 @@ header.banner {
    	overflow:hidden;
 		width: calc(100% / 3);
 		height: calc((100% - 40px) / 3);
-    cursor: pointer;
+   	cursor: pointer;
 
-    &.film-black {
-    	cursor: auto;
-    	pointer-events:none;
-    }
-
-    &.active {
-    	@include box-shadow(0 0 50px rgba(0, 0, 0, 0.4));
-    	z-index:999999;
-    }
+  	&.film-black {
+  		cursor: auto;
+  		pointer-events:none;
+  	}
 
     h1.slogan {
     	@include transform(translate(-50%, -50%));
@@ -298,13 +310,12 @@ header.banner {
 		position:absolute;
 		top: calc((100% - 40px) / 3);
 		right:0;
-		z-index: 99999;
+		z-index: 999;
 		visibility: hidden;
 		width:calc((100% / 3) * 2);
 		height: calc((100% - 40px) / 3);
 		background:#222;
 		color:white;
-		@include box-shadow(0 0 50px rgba(0, 0, 0, 0.4));
 
 		.still {
 			float: left;
@@ -327,7 +338,7 @@ header.banner {
 				left: 50%;
 				@include transform(translate(-50%,-50%));
 				width: 100%;
-				padding: 30px;
+				padding: 25px;
 			}
 
 			h2 {
@@ -336,7 +347,7 @@ header.banner {
 	    	text-transform: uppercase;
 	    	letter-spacing: 0.05em;
 	    	font-weight: 900;
-				font-size: 28px;
+				font-size: 24px;
 	    	line-height: 1.3;
 			}
 
@@ -357,6 +368,7 @@ header.banner {
 				color:white;
 				font-size: 24px;
 				line-height: 1;
+				z-index: 9999;
 			}
 		}
 		
@@ -375,10 +387,11 @@ header.banner {
 			}	
 			
 			.still {
-				height:75%;
+				height:60%;
+				background-position: center center;
 			}
 			.meta {
-				height: 25%;
+				height:40%;
 			}
 		}
 	}
@@ -407,10 +420,6 @@ header.banner {
 /* PAGE HEAEDER */
 header.page-header.orange {
 	background: $main-color;
-
-	h1 {
-		color:white;
-	}
 }
 
 header.page-header {
@@ -423,7 +432,7 @@ header.page-header {
 	h1 {
 		letter-spacing: 0.05em;
 		font-weight:700;
-		color:rgba(black, 0.8);
+		color:white;
 		padding-left:30px;
 		padding-right:30px;
 	}
@@ -500,7 +509,7 @@ header.page-header {
 				.righty {
 					float:left;
 					padding-left:15px;
-					
+
 					p {
 						color: rgba(black, 0.75);
 						font-weight: 600;
@@ -551,7 +560,8 @@ header.page-header {
 			}
 			
 			p.detail {
-				font-size:16px;
+				margin-bottom: 7px;
+				color: rgba(0, 0, 0, 0.7);
 			}
 			
 			.cta {
@@ -580,6 +590,11 @@ header.page-header {
 
 		}
 	}
+}
+
+.post-30 p.f30:after, .post-28 p.f28:after, .post-24 p.f24:after, .post-22 p.f22:after, .post-32 p.f32:after, .post-34 p.f34:after, .post-26 p.f26:after {
+	background: $sub-color !important;
+	border-color:white;
 }
 
 /* ABOUT */
@@ -635,7 +650,7 @@ header.page-header {
 
 		.day-container {
 			background: white;
-			padding:20px 20px 10px;
+			padding:20px;
 		}
 
 		h3 {
@@ -663,14 +678,14 @@ header.page-header {
 			text-align: center;
 			background: #f8f8f8;
 			margin-bottom: 20px;
-			padding-bottom: 1px;
+			padding-bottom:15px;
 
 			&:hover [class*="film-"] > img, &:hover [class^="film-"] > img {
 				bottom:0;
 			}
 
 			[class*="film-"], [class^="film-"] {
-				height: 230px;
+				height: 190px;
 				overflow: hidden;
 				text-align: center;
 				position: relative;
@@ -687,16 +702,17 @@ header.page-header {
 			}
 
 			p.title {
-				margin: 10px 0 3px;
 				text-transform: uppercase;
 				font-weight: 600;
 				font-size: 16px;
 				letter-spacing: 0.3px;
 				color: #444;
+				padding-top: 12px;
 			}
 
 			p {
 				color:#888;
+				margin-bottom: 2px;
 			}
 		}
 	}
@@ -705,26 +721,26 @@ header.page-header {
 .ticketing, .venue {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
 
-	h3.red, h3.yellow, h3.teal {
-		padding: 5px 10px;
-		margin-bottom:20px;
-		color:white;
-		display: inline-block;
-		font-size:24px;
-	}
+h3.red, h3.yellow, h3.teal {
+	padding: 5px 10px;
+	margin-bottom:20px;
+	color:white;
+	display: inline-block;
+	font-size:24px;
+}
 
-	h3.yellow {
-		background: $yellow;
-	}
+h3.yellow {
+	background: $yellow;
+}
 
-	h3.teal {
-		background: $sub-color;
-	}	
+h3.teal {
+	background: $sub-color;
+}	
 
-	h3.red {
-		background: $main-color;
-	}
+h3.red {
+	background: $main-color;
 }
 
 /* VENUE */
@@ -737,6 +753,36 @@ header.page-header {
 		text-transform: uppercase;
 		font-weight: 900;
 		letter-spacing: 1px;
+	}
+}
+
+/* FESTIVAL EVENTS */
+.festival-events {
+	margin-top:30px;
+
+	.content {
+		background: white;
+		padding:20px;
+
+		h2 {
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			line-height: 1.3;
+		}
+
+		h4 {
+			font-weight: 300;
+			text-transform: uppercase;
+			color:#888;
+			font-size: 14px;
+			margin: 10px 0;
+		}
+
+		hr {
+			border-top: 3px solid #333;
+			margin-top: 60px;
+		}
 	}
 }
 

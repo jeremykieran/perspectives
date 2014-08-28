@@ -41,29 +41,29 @@
 	  			<div class="show" data-animate="fadein">
 	  				<div class="lefty">
 	  					<label>Thursday</label>
-		  				<p>7:30PM</p>
+		  				<p class="f28">7:30PM</p>
 		  				<label>Friday</label>
-		  				<p>7:30PM</p>
+		  				<p class="f22">7:30PM</p>
 		  				<label>Saturday</label>
-		  				<p>1:30PM</p>
-		  				<p>4:30PM</p>
-		  				<p>7:30PM</p>
+		  				<p class="f30">1:30PM</p>
+		  				<p class="f32">4:30PM</p>
+		  				<p class="f24">7:30PM</p>
 		  				<label>Sunday</label>
-		  				<p>1:30PM</p>
-		  				<p>4:30PM</p>
+		  				<p class="f34">1:30PM</p>
+		  				<p class="f26">4:30PM</p>
 	  				</div>
 	  				<div class="righty">
 	  					<label>Thursday</label>
-		  				<p>Short Term 12</p>
+		  				<a href="/film/short-term-12/"><p>Short Term 12</p></a>
 		  				<label>Friday</label>
-		  				<p>Salaam Bombay!</p>
+		  				<a href="/film/salaam-bombay/"><p>Salaam Bombay!</p></a>
 		  				<label>Saturday</label>
-		  				<p>Walkabout</p>
-		  				<p>Suzhou River</p>
-		  				<p>Hedwig and the Angry Inch</p>
+		  				<a href="/film/walkabout/"><p>Walkabout</p></a>
+		  				<a href="/film/suzhou-river/"><p>Suzhou River</p></a>
+		  				<a href="/film/hedwig-and-the-angry-inch/"><p>Hedwig and the Angry Inch</p></a>
 		  				<label>Sunday</label>
-		  				<p>Sin Nombre</p>
-		  				<p>Ali: Fear Eats the Soul</p>
+		  				<a href="/film/sin-nombre/"><p>Sin Nombre</p></a>
+		  				<a href="/film/ali-fear-eats-the-soul/"><p>Ali: Fear Eats the Soul</p></a>
 	  				</div>
 	  			</div>
 	  	</div>

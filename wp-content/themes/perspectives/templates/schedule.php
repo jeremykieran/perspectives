@@ -27,12 +27,15 @@
 				?>
 
 				<a href="<?php the_permalink(); ?>" alt="<?php the_field('title'); ?>">
-					<article class="event">
+					<article class="event" style="margin-bottom:0">
 						<div class="<?php the_field('avatar_color') ?>">
 							<img src="<?php the_field('avatar') ?>">
 						</div>
 						<p class="title"><?php the_field('title'); ?></p>
 						<p><?php the_field('time'); ?></p>
+						<?php if( get_field('subtitle') ): ?>
+							<p><em><?php the_field('subtitle') ?></em></p>
+						<?php endif; ?>
 					</article>
 				</a>
 
@@ -58,12 +61,15 @@
 				?>
 
 				<a href="<?php the_permalink(); ?>" alt="<?php the_field('title'); ?>">
-				<article class="event">
+				<article class="event" style="margin-bottom:0">
 					<div class="<?php the_field('avatar_color') ?>">
 						<img src="<?php the_field('avatar') ?>">
 					</div>
 					<p class="title"><?php the_field('title'); ?></p>
 					<p><?php the_field('time'); ?></p>
+					<?php if( get_field('subtitle') ): ?>
+						<p><em><?php the_field('subtitle') ?></em></p>
+					<?php endif; ?>
 				</article>
 				</a>
 
@@ -74,12 +80,21 @@
 				<div class="day-container">
 				<h3>Saturday</h3>
 				<h3>18 OCT</h3>
-				<h4>National Museum Singapore</h4>
+				<h4>NMS</h4>
 				<?php 
 				$args = array(
 					'post_type'		=> array('film', 'workshop'),
-					'meta_key'	=> 'date',
-					'meta_value' => '18 October'
+					'meta_query' => array(
+				        array(
+				            'key' => 'chron_order',
+				            'value' => array(3,6),
+				            'compare' => 'BETWEEN',
+				            'type' => 'NUMERIC'
+				        )
+				    ),
+				    'meta_key' => 'chron_order',
+				    'orderby' => 'meta_value_num',
+				    'order' => 'ASC' 
 				);
 
 				$wp_query = new WP_Query( $args );
@@ -95,6 +110,9 @@
 					</div>
 					<p class="title"><?php the_field('title'); ?></p>
 					<p><?php the_field('time'); ?></p>
+					<?php if( get_field('subtitle') ): ?>
+							<p><em><?php the_field('subtitle') ?></em></p>
+						<?php endif; ?>
 				</article>
 				</a>
 
@@ -105,12 +123,21 @@
 				<div class="day-container">
 				<h3>Sunday</h3>
 				<h3>19 OCT</h3>
-				<h4>National Museum Singapore</h4>
+				<h4>NMS</h4>
 				<?php 
 				$args = array(
 					'post_type'		=> array('film', 'workshop'),
-					'meta_key'	=> 'date',
-					'meta_value' => '19 October'
+					'meta_query' => array(
+				        array(
+				            'key' => 'chron_order',
+				            'value' => array(7,9),
+				            'compare' => 'BETWEEN',
+				            'type' => 'NUMERIC'
+				        )
+				    ),
+				    'meta_key' => 'chron_order',
+				    'orderby' => 'meta_value_num',
+				    'order' => 'ASC' 
 				);
 
 				$wp_query = new WP_Query( $args );
@@ -126,6 +153,9 @@
 					</div>
 					<p class="title"><?php the_field('title'); ?></p>
 					<p><?php the_field('time'); ?></p>
+					<?php if( get_field('subtitle') ): ?>
+						<p><em><?php the_field('subtitle') ?></em></p>
+					<?php endif; ?>
 				</article>
 				</a>
 

@@ -1,13 +1,13 @@
 <footer class="basement">
 	<div class="row">
-		<div class="large-1 column">
+		<div class="large-2 column">
 			<a href="<?php echo home_url(); ?>"><img class="logo" src="<?php img(); ?>/perspectives-film-festival-2014-logo.png" width="100"></a>
 		</div>
-		<div class="large-4 column">
+		<div class="large-2 column">
 			<p class="copy">&copy; Perspectives Film Festival 2014</p>
 		</div>
-		<div class="large-1 column">
-
+		<div class="large-2 column text-right">
+			<a href="#" class="button film-yellow">Download Brochure</a>
 		</div>
 	</div>
 </footer>

@@ -1,7 +1,7 @@
 <?php /* Template Name: Films */ ?>
 
 <main class="landing films">
-<?php $films = Film::find_by("type", "featured-films"); if( $films->have_posts() ) : while( $films->have_posts() ): $films->the_post(); ?>
+<?php $args_array = array( 'orderby' => 'title', 'order' => 'ASC' ); $films = Film::find( $args_array ); if( $films->have_posts() ) : while( $films->have_posts() ): $films->the_post(); ?>
 	<article class="film <?php the_field('avatar_color') ?>" data-film-id="<?php the_ID(); ?>">
 		<?php if( get_field('avatar') ): ?>
 			<img class="avatar" src="<?php the_field('avatar') ?>">
