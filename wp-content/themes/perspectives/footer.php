@@ -7,7 +7,7 @@
 			<p class="copy">&copy; Perspectives Film Festival 2014</p>
 		</div>
 		<div class="large-2 column text-right">
-			<a href="#" class="button film-yellow">Download Brochure</a>
+			<a href="#" class="button film-yellow">Download Booklet</a>
 		</div>
 	</div>
 </footer>

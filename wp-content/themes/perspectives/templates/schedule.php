@@ -77,7 +77,7 @@
 				</div>
 			</li>
 			<li class="day">
-				<div class="day-container">
+				<div class="day-container" style="padding-bottom:1px;">
 				<h3>Saturday</h3>
 				<h3>18 OCT</h3>
 				<h4>NMS</h4>
@@ -106,7 +106,11 @@
 				<a href="<?php the_permalink(); ?>" alt="<?php the_field('title'); ?>">
 				<article class="event">
 					<div class="<?php the_field('avatar_color') ?>">
-						<img src="<?php the_field('avatar') ?>">
+						<?php if ( 'film' == get_post_type() ) { ?>
+							<img src="<?php the_field('avatar') ?>">
+						<?php } elseif ( 'workshop' == get_post_type() ) { ?>
+							<p class="workshop-title"><?php the_title(); ?></p>
+						<?php } ?>
 					</div>
 					<p class="title"><?php the_field('title'); ?></p>
 					<p><?php the_field('time'); ?></p>
@@ -120,7 +124,7 @@
 				</div>
 			</li>
 			<li class="day">
-				<div class="day-container">
+				<div class="day-container" style="padding-bottom:1px;">
 				<h3>Sunday</h3>
 				<h3>19 OCT</h3>
 				<h4>NMS</h4>
@@ -149,7 +153,11 @@
 				<a href="<?php the_permalink(); ?>" alt="<?php the_field('title'); ?>">
 				<article class="event">
 					<div class="<?php the_field('avatar_color') ?>">
-						<img src="<?php the_field('avatar') ?>">
+						<?php if ( 'film' == get_post_type() ) { ?>
+							<img src="<?php the_field('avatar') ?>">
+						<?php } elseif ( 'workshop' == get_post_type() ) { ?>
+							<p class="workshop-title"><?php the_title(); ?></p>
+						<?php } ?>
 					</div>
 					<p class="title"><?php the_field('title'); ?></p>
 					<p><?php the_field('time'); ?></p>

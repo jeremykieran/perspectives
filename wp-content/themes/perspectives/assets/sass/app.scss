@@ -701,6 +701,18 @@ header.page-header {
 				}
 			}
 
+			p.workshop-title {
+				color: #FFF;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 21px;
+				padding: 20px;
+				line-height: 1.3;
+				position: absolute;
+				top: 50%;
+				@include transform(translate(0,-50%));
+			}
+
 			p.title {
 				text-transform: uppercase;
 				font-weight: 600;
